@@ -3,6 +3,8 @@ services:
     name: couchdb1
     env: docker
     envVars:
+      - key: NODENAME
+        sync: false
       - fromGroup: couchdb-settings
     disk:
       name: data
@@ -12,6 +14,8 @@ services:
     name: couchdb2
     env: docker
     envVars:
+      - key: NODENAME
+        sync: false
       - fromGroup: couchdb-settings
     disk:
       name: data
