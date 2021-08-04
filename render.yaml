@@ -5,6 +5,8 @@ services:
     envVars:
       - key: NODENAME
         sync: false
+      - key: QUOTAGUARDSTATIC_URL
+        value: http://jk3c6j08ar3q06:fm54qmggeh6cpysb726ysscnp1qc@us-west-static-01-a.quotaguard.com:9293
       - fromGroup: couchdb-settings
     disk:
       name: data
@@ -16,6 +18,8 @@ services:
     envVars:
       - key: NODENAME
         sync: false
+      - key: QUOTAGUARDSTATIC_URL
+        value: http://jk3c6j08ar3q06:fm54qmggeh6cpysb726ysscnp1qc@us-west-static-01-b.quotaguard.com:9293
       - fromGroup: couchdb-settings
     disk:
       name: data
